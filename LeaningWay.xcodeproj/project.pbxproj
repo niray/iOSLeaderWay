@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F329151CB4F3B500A05274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329141CB4F3B500A05274 /* main.m */; };
+		04F329181CB4F3B500A05274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329171CB4F3B500A05274 /* AppDelegate.m */; };
+		04F3291B1CB4F3B500A05274 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3291A1CB4F3B500A05274 /* ViewController.m */; };
+		04F3291E1CB4F3B500A05274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F3291C1CB4F3B500A05274 /* Main.storyboard */; };
+		04F329201CB4F3B500A05274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F3291F1CB4F3B500A05274 /* Assets.xcassets */; };
+		04F329231CB4F3B500A05274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F329211CB4F3B500A05274 /* LaunchScreen.storyboard */; };
+		04F3292E1CB4F3B500A05274 /* LeaningWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3292D1CB4F3B500A05274 /* LeaningWayTests.m */; };
+		04F329391CB4F3B500A05274 /* LeaningWayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329381CB4F3B500A05274 /* LeaningWayUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F3292A1CB4F3B500A05274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F329081CB4F3B400A05274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F3290F1CB4F3B500A05274;
+			remoteInfo = LeaningWay;
+		};
+		04F329351CB4F3B500A05274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F329081CB4F3B400A05274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F3290F1CB4F3B500A05274;
+			remoteInfo = LeaningWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F329101CB4F3B500A05274 /* LeaningWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaningWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F329141CB4F3B500A05274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F329161CB4F3B500A05274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04F329171CB4F3B500A05274 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04F329191CB4F3B500A05274 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04F3291A1CB4F3B500A05274 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04F3291D1CB4F3B500A05274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F3291F1CB4F3B500A05274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F329221CB4F3B500A05274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F329241CB4F3B500A05274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F329291CB4F3B500A05274 /* LeaningWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaningWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F3292D1CB4F3B500A05274 /* LeaningWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaningWayTests.m; sourceTree = "<group>"; };
+		04F3292F1CB4F3B500A05274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F329341CB4F3B500A05274 /* LeaningWayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaningWayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F329381CB4F3B500A05274 /* LeaningWayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaningWayUITests.m; sourceTree = "<group>"; };
+		04F3293A1CB4F3B500A05274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F3290D1CB4F3B500A05274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F329261CB4F3B500A05274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F329311CB4F3B500A05274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F329071CB4F3B400A05274 = {
+			isa = PBXGroup;
+			children = (
+				04F329121CB4F3B500A05274 /* LeaningWay */,
+				04F3292C1CB4F3B500A05274 /* LeaningWayTests */,
+				04F329371CB4F3B500A05274 /* LeaningWayUITests */,
+				04F329111CB4F3B500A05274 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F329111CB4F3B500A05274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F329101CB4F3B500A05274 /* LeaningWay.app */,
+				04F329291CB4F3B500A05274 /* LeaningWayTests.xctest */,
+				04F329341CB4F3B500A05274 /* LeaningWayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F329121CB4F3B500A05274 /* LeaningWay */ = {
+			isa = PBXGroup;
+			children = (
+				04F329161CB4F3B500A05274 /* AppDelegate.h */,
+				04F329171CB4F3B500A05274 /* AppDelegate.m */,
+				04F329191CB4F3B500A05274 /* ViewController.h */,
+				04F3291A1CB4F3B500A05274 /* ViewController.m */,
+				04F3291C1CB4F3B500A05274 /* Main.storyboard */,
+				04F3291F1CB4F3B500A05274 /* Assets.xcassets */,
+				04F329211CB4F3B500A05274 /* LaunchScreen.storyboard */,
+				04F329241CB4F3B500A05274 /* Info.plist */,
+				04F329131CB4F3B500A05274 /* Supporting Files */,
+			);
+			path = LeaningWay;
+			sourceTree = "<group>";
+		};
+		04F329131CB4F3B500A05274 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F329141CB4F3B500A05274 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F3292C1CB4F3B500A05274 /* LeaningWayTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F3292D1CB4F3B500A05274 /* LeaningWayTests.m */,
+				04F3292F1CB4F3B500A05274 /* Info.plist */,
+			);
+			path = LeaningWayTests;
+			sourceTree = "<group>";
+		};
+		04F329371CB4F3B500A05274 /* LeaningWayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F329381CB4F3B500A05274 /* LeaningWayUITests.m */,
+				04F3293A1CB4F3B500A05274 /* Info.plist */,
+			);
+			path = LeaningWayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F3290F1CB4F3B500A05274 /* LeaningWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F3293D1CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWay" */;
+			buildPhases = (
+				04F3290C1CB4F3B500A05274 /* Sources */,
+				04F3290D1CB4F3B500A05274 /* Frameworks */,
+				04F3290E1CB4F3B500A05274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeaningWay;
+			productName = LeaningWay;
+			productReference = 04F329101CB4F3B500A05274 /* LeaningWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F329281CB4F3B500A05274 /* LeaningWayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F329401CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWayTests" */;
+			buildPhases = (
+				04F329251CB4F3B500A05274 /* Sources */,
+				04F329261CB4F3B500A05274 /* Frameworks */,
+				04F329271CB4F3B500A05274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F3292B1CB4F3B500A05274 /* PBXTargetDependency */,
+			);
+			name = LeaningWayTests;
+			productName = LeaningWayTests;
+			productReference = 04F329291CB4F3B500A05274 /* LeaningWayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F329331CB4F3B500A05274 /* LeaningWayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F329431CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWayUITests" */;
+			buildPhases = (
+				04F329301CB4F3B500A05274 /* Sources */,
+				04F329311CB4F3B500A05274 /* Frameworks */,
+				04F329321CB4F3B500A05274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F329361CB4F3B500A05274 /* PBXTargetDependency */,
+			);
+			name = LeaningWayUITests;
+			productName = LeaningWayUITests;
+			productReference = 04F329341CB4F3B500A05274 /* LeaningWayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F329081CB4F3B400A05274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Android Develope";
+				TargetAttributes = {
+					04F3290F1CB4F3B500A05274 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					04F329281CB4F3B500A05274 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 04F3290F1CB4F3B500A05274;
+					};
+					04F329331CB4F3B500A05274 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 04F3290F1CB4F3B500A05274;
+					};
+				};
+			};
+			buildConfigurationList = 04F3290B1CB4F3B400A05274 /* Build configuration list for PBXProject "LeaningWay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F329071CB4F3B400A05274;
+			productRefGroup = 04F329111CB4F3B500A05274 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F3290F1CB4F3B500A05274 /* LeaningWay */,
+				04F329281CB4F3B500A05274 /* LeaningWayTests */,
+				04F329331CB4F3B500A05274 /* LeaningWayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F3290E1CB4F3B500A05274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F329231CB4F3B500A05274 /* LaunchScreen.storyboard in Resources */,
+				04F329201CB4F3B500A05274 /* Assets.xcassets in Resources */,
+				04F3291E1CB4F3B500A05274 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F329271CB4F3B500A05274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F329321CB4F3B500A05274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F3290C1CB4F3B500A05274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F3291B1CB4F3B500A05274 /* ViewController.m in Sources */,
+				04F329181CB4F3B500A05274 /* AppDelegate.m in Sources */,
+				04F329151CB4F3B500A05274 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F329251CB4F3B500A05274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F3292E1CB4F3B500A05274 /* LeaningWayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F329301CB4F3B500A05274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F329391CB4F3B500A05274 /* LeaningWayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F3292B1CB4F3B500A05274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F3290F1CB4F3B500A05274 /* LeaningWay */;
+			targetProxy = 04F3292A1CB4F3B500A05274 /* PBXContainerItemProxy */;
+		};
+		04F329361CB4F3B500A05274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F3290F1CB4F3B500A05274 /* LeaningWay */;
+			targetProxy = 04F329351CB4F3B500A05274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F3291C1CB4F3B500A05274 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F3291D1CB4F3B500A05274 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F329211CB4F3B500A05274 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F329221CB4F3B500A05274 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F3293B1CB4F3B500A05274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F3293C1CB4F3B500A05274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F3293E1CB4F3B500A05274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LeaningWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F3293F1CB4F3B500A05274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LeaningWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04F329411CB4F3B500A05274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LeaningWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeaningWay.app/LeaningWay";
+			};
+			name = Debug;
+		};
+		04F329421CB4F3B500A05274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LeaningWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeaningWay.app/LeaningWay";
+			};
+			name = Release;
+		};
+		04F329441CB4F3B500A05274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LeaningWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LeaningWay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		04F329451CB4F3B500A05274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LeaningWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LeaningWay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F3290B1CB4F3B400A05274 /* Build configuration list for PBXProject "LeaningWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F3293B1CB4F3B500A05274 /* Debug */,
+				04F3293C1CB4F3B500A05274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F3293D1CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F3293E1CB4F3B500A05274 /* Debug */,
+				04F3293F1CB4F3B500A05274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F329401CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F329411CB4F3B500A05274 /* Debug */,
+				04F329421CB4F3B500A05274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F329431CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F329441CB4F3B500A05274 /* Debug */,
+				04F329451CB4F3B500A05274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F329081CB4F3B400A05274 /* Project object */;
+}
