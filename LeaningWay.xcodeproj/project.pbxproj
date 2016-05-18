@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042E083E1CB7ABFB00889CCF /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E083D1CB7ABFB00889CCF /* HypnosisView.m */; };
+		0438B26F1CC079F3000A66C5 /* hs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0438B26E1CC079F3000A66C5 /* hs.jpg */; };
+		04527B5C1CC64DF200A05207 /* 1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 04527B5A1CC64DF200A05207 /* 1_normal.png */; };
+		04527B5D1CC64DF200A05207 /* 1_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 04527B5B1CC64DF200A05207 /* 1_selected.png */; };
+		047411231CC4C9CF00386CF0 /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */; };
+		047411261CC4D4EA00386CF0 /* BHRReminderVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */; };
+		047411281CC4E45500386CF0 /* BHRReminderVIewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */; };
+		047F8B441CEC1EA500EB8463 /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */; };
+		047F8B471CEC559700EB8463 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F8B461CEC559700EB8463 /* BNRItemStore.m */; };
+		047F8B4A1CEC737800EB8463 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F8B491CEC737800EB8463 /* BNRItem.m */; };
+		047F8B4C1CECA30900EB8463 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047F8B4B1CECA30900EB8463 /* HeaderView.xib */; };
+		0497ECDC1CB4FC360055763F /* FirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */; };
+		049C78541CB7AB41009076E2 /* HypnosisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049C78531CB7AB41009076E2 /* HypnosisView.xib */; };
 		04F329151CB4F3B500A05274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329141CB4F3B500A05274 /* main.m */; };
 		04F329181CB4F3B500A05274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329171CB4F3B500A05274 /* AppDelegate.m */; };
 		04F3291B1CB4F3B500A05274 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3291A1CB4F3B500A05274 /* ViewController.m */; };
@@ -35,6 +48,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042E083C1CB7ABFB00889CCF /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		042E083D1CB7ABFB00889CCF /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		0438B26E1CC079F3000A66C5 /* hs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hs.jpg; sourceTree = "<group>"; };
+		04527B5A1CC64DF200A05207 /* 1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_normal.png; sourceTree = "<group>"; };
+		04527B5B1CC64DF200A05207 /* 1_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_selected.png; sourceTree = "<group>"; };
+		047411211CC4C9CF00386CF0 /* BNRHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisViewController.h; sourceTree = "<group>"; };
+		047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisViewController.m; sourceTree = "<group>"; };
+		047411241CC4D4EA00386CF0 /* BHRReminderVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHRReminderVIewController.h; sourceTree = "<group>"; };
+		047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHRReminderVIewController.m; sourceTree = "<group>"; };
+		047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHRReminderVIewController.xib; sourceTree = "<group>"; };
+		047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemsViewController.h; sourceTree = "<group>"; };
+		047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemsViewController.m; sourceTree = "<group>"; };
+		047F8B451CEC559700EB8463 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
+		047F8B461CEC559700EB8463 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
+		047F8B481CEC737800EB8463 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		047F8B491CEC737800EB8463 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		047F8B4B1CECA30900EB8463 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
+		049C78531CB7AB41009076E2 /* HypnosisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypnosisView.xib; sourceTree = "<group>"; };
 		04F329101CB4F3B500A05274 /* LeaningWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaningWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F329141CB4F3B500A05274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F329161CB4F3B500A05274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +113,15 @@
 		04F329071CB4F3B400A05274 = {
 			isa = PBXGroup;
 			children = (
+				047F8B4B1CECA30900EB8463 /* HeaderView.xib */,
+				047F8B481CEC737800EB8463 /* BNRItem.h */,
+				047F8B491CEC737800EB8463 /* BNRItem.m */,
+				047F8B451CEC559700EB8463 /* BNRItemStore.h */,
+				047F8B461CEC559700EB8463 /* BNRItemStore.m */,
+				04527B5A1CC64DF200A05207 /* 1_normal.png */,
+				04527B5B1CC64DF200A05207 /* 1_selected.png */,
+				0438B26E1CC079F3000A66C5 /* hs.jpg */,
+				0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */,
 				04F329121CB4F3B500A05274 /* LeaningWay */,
 				04F3292C1CB4F3B500A05274 /* LeaningWayTests */,
 				04F329371CB4F3B500A05274 /* LeaningWayUITests */,
@@ -110,6 +151,16 @@
 				04F329211CB4F3B500A05274 /* LaunchScreen.storyboard */,
 				04F329241CB4F3B500A05274 /* Info.plist */,
 				04F329131CB4F3B500A05274 /* Supporting Files */,
+				049C78531CB7AB41009076E2 /* HypnosisView.xib */,
+				042E083C1CB7ABFB00889CCF /* HypnosisView.h */,
+				042E083D1CB7ABFB00889CCF /* HypnosisView.m */,
+				047411211CC4C9CF00386CF0 /* BNRHypnosisViewController.h */,
+				047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */,
+				047411241CC4D4EA00386CF0 /* BHRReminderVIewController.h */,
+				047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */,
+				047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */,
+				047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */,
+				047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */,
 			);
 			path = LeaningWay;
 			sourceTree = "<group>";
@@ -243,8 +294,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04527B5D1CC64DF200A05207 /* 1_selected.png in Resources */,
+				047F8B4C1CECA30900EB8463 /* HeaderView.xib in Resources */,
+				04527B5C1CC64DF200A05207 /* 1_normal.png in Resources */,
+				047411281CC4E45500386CF0 /* BHRReminderVIewController.xib in Resources */,
 				04F329231CB4F3B500A05274 /* LaunchScreen.storyboard in Resources */,
+				049C78541CB7AB41009076E2 /* HypnosisView.xib in Resources */,
 				04F329201CB4F3B500A05274 /* Assets.xcassets in Resources */,
+				0497ECDC1CB4FC360055763F /* FirstStoryboard.storyboard in Resources */,
+				0438B26F1CC079F3000A66C5 /* hs.jpg in Resources */,
 				04F3291E1CB4F3B500A05274 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047F8B441CEC1EA500EB8463 /* BNRItemsViewController.m in Sources */,
 				04F3291B1CB4F3B500A05274 /* ViewController.m in Sources */,
+				042E083E1CB7ABFB00889CCF /* HypnosisView.m in Sources */,
 				04F329181CB4F3B500A05274 /* AppDelegate.m in Sources */,
 				04F329151CB4F3B500A05274 /* main.m in Sources */,
+				047411231CC4C9CF00386CF0 /* BNRHypnosisViewController.m in Sources */,
+				047411261CC4D4EA00386CF0 /* BHRReminderVIewController.m in Sources */,
+				047F8B4A1CEC737800EB8463 /* BNRItem.m in Sources */,
+				047F8B471CEC559700EB8463 /* BNRItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = LeaningWay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWay;
@@ -424,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = LeaningWay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = niray.LeaningWay;
@@ -498,6 +564,7 @@
 				04F3293F1CB4F3B500A05274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F329401CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWayTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +573,7 @@
 				04F329421CB4F3B500A05274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F329431CB4F3B500A05274 /* Build configuration list for PBXNativeTarget "LeaningWayUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +582,7 @@
 				04F329451CB4F3B500A05274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
