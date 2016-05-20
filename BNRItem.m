@@ -8,11 +8,22 @@
 
 #import "BNRItem.h"
 
+
 @implementation BNRItem
+
+
+
 -(instancetype)initWithItemName:(NSString *)name{
     return  self;
 }
--(instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber{
+-(instancetype)initWithItemName:
+(NSString *)name
+                 valueInDollars:(int)value
+                   serialNumber:(NSString *)sNumber{
+    self.name=name;
+    self.serial=value;
+    self.value=sNumber;
+    self.dateValue = [[NSDate alloc]init];
      return  self;
 }
 
@@ -39,4 +50,20 @@
                                          serialNumber:randomSerialNumber];
     return newItem;
 }
+
+
+
+-(NSString *) description{
+    NSString *desciptionString = [[NSString alloc]initWithFormat:@"%@ (%@):Worth $%d , recorded on %@",
+                                  self.name,self.value,self.serial,self.dateValue];
+    return desciptionString;
+}
+
+
+
+
+
+
+
+
 @end

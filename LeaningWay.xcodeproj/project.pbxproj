@@ -20,6 +20,8 @@
 		047F8B4C1CECA30900EB8463 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047F8B4B1CECA30900EB8463 /* HeaderView.xib */; };
 		0497ECDC1CB4FC360055763F /* FirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */; };
 		049C78541CB7AB41009076E2 /* HypnosisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049C78531CB7AB41009076E2 /* HypnosisView.xib */; };
+		04A2195A1CEEB548002853A7 /* BNRDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A219581CEEB548002853A7 /* BNRDetailVC.m */; };
+		04A2195B1CEEB548002853A7 /* BNRDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A219591CEEB548002853A7 /* BNRDetailVC.xib */; };
 		04F329151CB4F3B500A05274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329141CB4F3B500A05274 /* main.m */; };
 		04F329181CB4F3B500A05274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329171CB4F3B500A05274 /* AppDelegate.m */; };
 		04F3291B1CB4F3B500A05274 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3291A1CB4F3B500A05274 /* ViewController.m */; };
@@ -67,6 +69,9 @@
 		047F8B4B1CECA30900EB8463 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
 		049C78531CB7AB41009076E2 /* HypnosisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypnosisView.xib; sourceTree = "<group>"; };
+		04A219571CEEB548002853A7 /* BNRDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDetailVC.h; sourceTree = "<group>"; };
+		04A219581CEEB548002853A7 /* BNRDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDetailVC.m; sourceTree = "<group>"; };
+		04A219591CEEB548002853A7 /* BNRDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDetailVC.xib; sourceTree = "<group>"; };
 		04F329101CB4F3B500A05274 /* LeaningWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaningWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F329141CB4F3B500A05274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F329161CB4F3B500A05274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +118,9 @@
 		04F329071CB4F3B400A05274 = {
 			isa = PBXGroup;
 			children = (
+				04A219571CEEB548002853A7 /* BNRDetailVC.h */,
+				04A219581CEEB548002853A7 /* BNRDetailVC.m */,
+				04A219591CEEB548002853A7 /* BNRDetailVC.xib */,
 				047F8B4B1CECA30900EB8463 /* HeaderView.xib */,
 				047F8B481CEC737800EB8463 /* BNRItem.h */,
 				047F8B491CEC737800EB8463 /* BNRItem.m */,
@@ -302,6 +310,7 @@
 				049C78541CB7AB41009076E2 /* HypnosisView.xib in Resources */,
 				04F329201CB4F3B500A05274 /* Assets.xcassets in Resources */,
 				0497ECDC1CB4FC360055763F /* FirstStoryboard.storyboard in Resources */,
+				04A2195B1CEEB548002853A7 /* BNRDetailVC.xib in Resources */,
 				0438B26F1CC079F3000A66C5 /* hs.jpg in Resources */,
 				04F3291E1CB4F3B500A05274 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +343,7 @@
 				04F329181CB4F3B500A05274 /* AppDelegate.m in Sources */,
 				04F329151CB4F3B500A05274 /* main.m in Sources */,
 				047411231CC4C9CF00386CF0 /* BNRHypnosisViewController.m in Sources */,
+				04A2195A1CEEB548002853A7 /* BNRDetailVC.m in Sources */,
 				047411261CC4D4EA00386CF0 /* BHRReminderVIewController.m in Sources */,
 				047F8B4A1CEC737800EB8463 /* BNRItem.m in Sources */,
 				047F8B471CEC559700EB8463 /* BNRItemStore.m in Sources */,

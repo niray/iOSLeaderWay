@@ -53,19 +53,29 @@
     //3.UITabBarUiView
 //    [self setUIBarView];
     //4.UITableView
-    [self setTableView];
+   // self.window.rootViewController =   [self setTableView];
+//5.UINavigationController
+    [self setUINavagationControll];
+    
     //self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
 //Q:1.UITabBarC 不显示名字和图片
 //  2.不显示Notify
-
+//5.setUINavagationControll
+-(void)setUINavagationControll{
+    UINavigationController *navCtrl = [[UINavigationController alloc]initWithRootViewController:[self setTableView]];
+    self.window.rootViewController = navCtrl;
+}
 //4.
--(void)setTableView{
+
+-(BNRItemsViewController *)setTableView{
     BNRItemsViewController *itemVC = [[BNRItemsViewController alloc] init];
-    self.window.rootViewController = itemVC;
+   
+    return itemVC;
 }
 //3. UITabBarUiView
 - (void)setUIBarView {

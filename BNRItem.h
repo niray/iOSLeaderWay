@@ -10,6 +10,10 @@
 
 @interface BNRItem : NSObject
 
+@property (nonatomic,weak) NSString *name;
+@property int serial;
+@property (nonatomic,weak) NSString *value;
+@property (nonatomic,strong) NSDate *dateValue;
 
 -(instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber;
 -(instancetype) initWithItemName:(NSString *)name;

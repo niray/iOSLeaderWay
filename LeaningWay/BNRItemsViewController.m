@@ -9,6 +9,7 @@
 #import "BNRItemsViewController.h"
 #import "BNRItemStore.h"
 #import "BNRItem.h"
+#import "BNRDetailVC.h"
 
 @interface BNRItemsViewController ()
 @property (nonatomic,strong) IBOutlet UIView *headerView;
@@ -24,7 +25,23 @@
 
 -(instancetype)init{
     self=[super initWithStyle:UITableViewStylePlain];
+    
+    UINavigationItem *navItem =  self.navigationItem  ;
+    navItem.title=@"ItemVC";
+    
+    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
+    navItem .rightBarButtonItem = bbi;
+    navItem.leftBarButtonItem = self.editButtonItem;
+    
+    
     return self;
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [self addNewItem:nil];
+    [self addNewItem:nil];
+    [self addNewItem:nil];
 }
 
 -(instancetype)initWithStyle:(UITableViewStyle)style{
@@ -32,12 +49,22 @@
 }
 
 
--(UIView *)headerView{
-    if(!_headerView){
-       _headerView =  [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil][0];
-    }
-    return _headerView;
-}
+//-(UIView *)headerView{
+//    if(!_headerView){
+//       _headerView =  [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil][0];
+//    }
+//    return _headerView;
+//}
+//
+//-(IBAction)toggleEditingMode:(id)sender{
+//    if(self.isEditing) {
+//        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+//        [self setEditing:NO animated:YES];
+//    }else{
+//        [sender setTitle:@"Done" forState:UIControlStateNormal];
+//        [self setEditing:YES animated:YES];
+//    }
+//}
 
 -(IBAction)addNewItem:(id)sender{
     //NSInteger lastRow = [self.tableView numberOfRowsInSection:0] ;
@@ -47,16 +74,6 @@
     
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
     
-}
-
--(IBAction)toggleEditingMode:(id)sender{
-    if(self.isEditing) {
-        [sender setTitle:@"Edit" forState:UIControlStateNormal];
-        [self setEditing:NO animated:YES];
-    }else{
-        [sender setTitle:@"Done" forState:UIControlStateNormal];
-        [self setEditing:YES animated:YES];
-    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -74,6 +91,14 @@
     }
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return @"Wanted";
+}
+
+-(void) viewWillAppear:(BOOL)animated   {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[[BNRItemStore sharedStore]allItems]count];
@@ -84,7 +109,7 @@
    NSArray *items = [[BNRItemStore sharedStore]allItems];
    BNRItem *item = items[indexPath.row];
    cell.textLabel.text = [item description] ;
-    cell.textLabel.text = [NSString stringWithFormat:@"secetion:%d,row:%d",indexPath.section,indexPath.row];
+  //cell.textLabel.text = [NSString stringWithFormat:@"secetion:%d,row:%d",indexPath.section,indexPath.row];
     return cell;
 }
 
@@ -93,5 +118,11 @@
     [[BNRItemStore sharedStore] moveItemAtIndex:sourceIndexPath.row toIndex:destinationIndexPath.row];
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    BNRDetailVC *detailVC = [[BNRDetailVC alloc]init];
+    NSArray *items = [[BNRItemStore sharedStore]allItems];
+    detailVC.item  = items[indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 
 @end
