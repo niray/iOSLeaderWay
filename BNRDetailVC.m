@@ -36,9 +36,7 @@
         }
         self.tf_date.text=[dateFormatter stringFromDate: item.dateValue];
         
-        self.navigationItem.title=item.name;
-
-        
+        self.navigationItem.title=item.name;        
     }}
 
 - (IBAction)takePicture:(id)sender {

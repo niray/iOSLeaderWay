@@ -50,25 +50,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		042E083C1CB7ABFB00889CCF /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
-		042E083D1CB7ABFB00889CCF /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		042E083C1CB7ABFB00889CCF /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnosisView.h; path = LeaningWay/HypnosisView.h; sourceTree = "<group>"; };
+		042E083D1CB7ABFB00889CCF /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnosisView.m; path = LeaningWay/HypnosisView.m; sourceTree = "<group>"; };
 		0438B26E1CC079F3000A66C5 /* hs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hs.jpg; sourceTree = "<group>"; };
 		04527B5A1CC64DF200A05207 /* 1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_normal.png; sourceTree = "<group>"; };
 		04527B5B1CC64DF200A05207 /* 1_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_selected.png; sourceTree = "<group>"; };
-		047411211CC4C9CF00386CF0 /* BNRHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisViewController.h; sourceTree = "<group>"; };
-		047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisViewController.m; sourceTree = "<group>"; };
-		047411241CC4D4EA00386CF0 /* BHRReminderVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHRReminderVIewController.h; sourceTree = "<group>"; };
-		047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHRReminderVIewController.m; sourceTree = "<group>"; };
-		047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHRReminderVIewController.xib; sourceTree = "<group>"; };
-		047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemsViewController.h; sourceTree = "<group>"; };
-		047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemsViewController.m; sourceTree = "<group>"; };
+		047411211CC4C9CF00386CF0 /* BNRHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRHypnosisViewController.h; path = LeaningWay/BNRHypnosisViewController.h; sourceTree = "<group>"; };
+		047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRHypnosisViewController.m; path = LeaningWay/BNRHypnosisViewController.m; sourceTree = "<group>"; };
+		047411241CC4D4EA00386CF0 /* BHRReminderVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHRReminderVIewController.h; path = LeaningWay/BHRReminderVIewController.h; sourceTree = "<group>"; };
+		047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHRReminderVIewController.m; path = LeaningWay/BHRReminderVIewController.m; sourceTree = "<group>"; };
+		047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BHRReminderVIewController.xib; path = LeaningWay/BHRReminderVIewController.xib; sourceTree = "<group>"; };
+		047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItemsViewController.h; path = LeaningWay/BNRItemsViewController.h; sourceTree = "<group>"; };
+		047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItemsViewController.m; path = LeaningWay/BNRItemsViewController.m; sourceTree = "<group>"; };
 		047F8B451CEC559700EB8463 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		047F8B461CEC559700EB8463 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 		047F8B481CEC737800EB8463 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		047F8B491CEC737800EB8463 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		047F8B4B1CECA30900EB8463 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
-		049C78531CB7AB41009076E2 /* HypnosisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypnosisView.xib; sourceTree = "<group>"; };
+		049C78531CB7AB41009076E2 /* HypnosisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HypnosisView.xib; path = LeaningWay/HypnosisView.xib; sourceTree = "<group>"; };
 		04A219571CEEB548002853A7 /* BNRDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDetailVC.h; sourceTree = "<group>"; };
 		04A219581CEEB548002853A7 /* BNRDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDetailVC.m; sourceTree = "<group>"; };
 		04A219591CEEB548002853A7 /* BNRDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDetailVC.xib; sourceTree = "<group>"; };
@@ -115,17 +115,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04F329071CB4F3B400A05274 = {
+		04BD11841CF06C7600A94CF9 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				04A219571CEEB548002853A7 /* BNRDetailVC.h */,
-				04A219581CEEB548002853A7 /* BNRDetailVC.m */,
-				04A219591CEEB548002853A7 /* BNRDetailVC.xib */,
-				047F8B4B1CECA30900EB8463 /* HeaderView.xib */,
 				047F8B481CEC737800EB8463 /* BNRItem.h */,
 				047F8B491CEC737800EB8463 /* BNRItem.m */,
 				047F8B451CEC559700EB8463 /* BNRItemStore.h */,
 				047F8B461CEC559700EB8463 /* BNRItemStore.m */,
+				04A219571CEEB548002853A7 /* BNRDetailVC.h */,
+				04A219581CEEB548002853A7 /* BNRDetailVC.m */,
+				04A219591CEEB548002853A7 /* BNRDetailVC.xib */,
+				047F8B4B1CECA30900EB8463 /* HeaderView.xib */,
+				047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */,
+				047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		04BD11851CF06CCE00A94CF9 /* Hypnosis */ = {
+			isa = PBXGroup;
+			children = (
+				049C78531CB7AB41009076E2 /* HypnosisView.xib */,
+				042E083C1CB7ABFB00889CCF /* HypnosisView.h */,
+				042E083D1CB7ABFB00889CCF /* HypnosisView.m */,
+				047411211CC4C9CF00386CF0 /* BNRHypnosisViewController.h */,
+				047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */,
+				047411241CC4D4EA00386CF0 /* BHRReminderVIewController.h */,
+				047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */,
+				047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */,
+			);
+			name = Hypnosis;
+			sourceTree = "<group>";
+		};
+		04F329071CB4F3B400A05274 = {
+			isa = PBXGroup;
+			children = (
+				04BD11851CF06CCE00A94CF9 /* Hypnosis */,
+				04BD11841CF06C7600A94CF9 /* TableView */,
 				04527B5A1CC64DF200A05207 /* 1_normal.png */,
 				04527B5B1CC64DF200A05207 /* 1_selected.png */,
 				0438B26E1CC079F3000A66C5 /* hs.jpg */,
@@ -159,16 +185,6 @@
 				04F329211CB4F3B500A05274 /* LaunchScreen.storyboard */,
 				04F329241CB4F3B500A05274 /* Info.plist */,
 				04F329131CB4F3B500A05274 /* Supporting Files */,
-				049C78531CB7AB41009076E2 /* HypnosisView.xib */,
-				042E083C1CB7ABFB00889CCF /* HypnosisView.h */,
-				042E083D1CB7ABFB00889CCF /* HypnosisView.m */,
-				047411211CC4C9CF00386CF0 /* BNRHypnosisViewController.h */,
-				047411221CC4C9CF00386CF0 /* BNRHypnosisViewController.m */,
-				047411241CC4D4EA00386CF0 /* BHRReminderVIewController.h */,
-				047411251CC4D4EA00386CF0 /* BHRReminderVIewController.m */,
-				047411271CC4E45500386CF0 /* BHRReminderVIewController.xib */,
-				047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */,
-				047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */,
 			);
 			path = LeaningWay;
 			sourceTree = "<group>";
