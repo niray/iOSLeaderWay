@@ -9,27 +9,38 @@
 @property (weak, nonatomic) IBOutlet UILabel *tf_date;
 @property (weak, nonatomic) IBOutlet UIImageView *iv_show;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
-
+@property (  nonatomic) BOOL  isInited;
 @end
 
 @implementation BNRDetailVC
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    self.isInited  = NO;
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     BNRItem *item = self.item;
-    self.tf_name.text=item.name;
-    self.tf_serial.text=[NSString stringWithFormat:@"serial %d",  item.serial ];
-    self.tf_value.text=item.value;
-    static NSDateFormatter *dateFormatter =nil;
-    if(!dateFormatter) {
-        dateFormatter= [[NSDateFormatter alloc]init];
-        dateFormatter.dateStyle = NSDateIntervalFormatterMediumStyle;
-        dateFormatter.timeStyle = NSDateFormatterNoStyle;
-    }
-    self.tf_date.text=[dateFormatter stringFromDate: item.dateValue];
-    
-    self.navigationItem.title=item.name;
-}
+    if(! self.isInited){
+        self.isInited = YES;
+        
+        self.tf_name.text=item.name;
+        self.tf_serial.text=[NSString stringWithFormat:@"serial %d",  item.serial ];
+        self.tf_value.text=item.value;
+        static NSDateFormatter *dateFormatter =nil;
+        if(!dateFormatter) {
+            dateFormatter= [[NSDateFormatter alloc]init];
+            dateFormatter.dateStyle = NSDateIntervalFormatterMediumStyle;
+            dateFormatter.timeStyle = NSDateFormatterNoStyle;
+        }
+        self.tf_date.text=[dateFormatter stringFromDate: item.dateValue];
+        
+        self.navigationItem.title=item.name;
+
+        
+    }}
+
 - (IBAction)takePicture:(id)sender {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
@@ -50,16 +61,13 @@
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
-    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-      image = [info objectForKey:UIImagePickerControllerEditedImage];
-    if (image == nil)
-        image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
+    UIImage *img = [info objectForKey:UIImagePickerControllerEditedImage];
+    if(!img) img = [info objectForKey:UIImagePickerControllerOriginalImage];
     NSString *imgUrl = [info valueForKey:UIImagePickerControllerReferenceURL] ;
     NSLog([NSString stringWithFormat:@"%@", imgUrl]);
-   // self.tf_serial.text = imgUrl;
-    image = [[UIImage alloc]initWithContentsOfFile:imgUrl];
-   // self.iv_show.image=image;
+    self.tf_serial.text = [NSString stringWithFormat:@"%@", imgUrl];
+// self.iv_show.image=image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
