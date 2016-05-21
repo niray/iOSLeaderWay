@@ -147,14 +147,22 @@
 			name = Hypnosis;
 			sourceTree = "<group>";
 		};
-		04F329071CB4F3B400A05274 = {
+		04BD11861CF06D5900A94CF9 /* Res */ = {
 			isa = PBXGroup;
 			children = (
-				04BD11851CF06CCE00A94CF9 /* Hypnosis */,
-				04BD11841CF06C7600A94CF9 /* TableView */,
 				04527B5A1CC64DF200A05207 /* 1_normal.png */,
 				04527B5B1CC64DF200A05207 /* 1_selected.png */,
 				0438B26E1CC079F3000A66C5 /* hs.jpg */,
+			);
+			name = Res;
+			sourceTree = "<group>";
+		};
+		04F329071CB4F3B400A05274 = {
+			isa = PBXGroup;
+			children = (
+				04BD11861CF06D5900A94CF9 /* Res */,
+				04BD11851CF06CCE00A94CF9 /* Hypnosis */,
+				04BD11841CF06C7600A94CF9 /* TableView */,
 				0497ECDB1CB4FC360055763F /* FirstStoryboard.storyboard */,
 				04F329121CB4F3B500A05274 /* LeaningWay */,
 				04F3292C1CB4F3B500A05274 /* LeaningWayTests */,
