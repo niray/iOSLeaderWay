@@ -2,31 +2,49 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/BNRItemStore.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRItem.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TouchTracker/BNRLine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TouchTracker/BNRDrawView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TouchTracker/BNRDrawView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TouchTracker/BNRLine.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TouchTracker/BNRDrawVC.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TouchTracker/BNRDrawVC.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_selected.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRItemStore.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRDetailVC.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HeaderView.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRDetailVC.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hs.jpg" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRDetailVC.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRImageStore.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWayTests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWayTests/LeaningWayTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRImageStore.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/HypnosisView.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/HypnosisView.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/HypnosisView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BHRReminderVIewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BNRItemsViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BNRItemsViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BHRReminderVIewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BNRHypnosisViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/HypnosisView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BNRHypnosisViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BHRReminderVIewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/ViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/BHRReminderVIewController.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWay/AppDelegate.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FirstStoryboard.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/1_selected.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/1_normal.png" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWayUITests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BNRItem.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FirstStoryboard.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeaningWayUITests/LeaningWayUITests.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/hs.jpg" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWayTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LeaningWayTests/LeaningWayTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LeaningWayUITests/Info.plist" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

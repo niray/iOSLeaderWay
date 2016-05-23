@@ -14,7 +14,7 @@
 @property int serial;
 @property (nonatomic,weak) NSString *value;
 @property (nonatomic,strong) NSDate *dateValue;
-
+@property(nonatomic, copy) NSString *itemKey;
 -(instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber;
 -(instancetype) initWithItemName:(NSString *)name;
 +(instancetype) randomItem;

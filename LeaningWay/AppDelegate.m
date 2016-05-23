@@ -11,6 +11,7 @@
 #import "BNRHypnosisViewController.h"
 #import "BHRReminderVIewController.h"
 #import "BNRItemsViewController.h"
+#import "BNRDrawVC.h"
 
 @interface AppDelegate ()
 
@@ -55,23 +56,27 @@
     //4.UITableView
    // self.window.rootViewController =   [self setTableView];
 //5.UINavigationController
-    [self setUINavagationControll];
-    
+    //   [self setUINavagationControll];
+    [self setDrawView];
     //self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-//Q:1.UITabBarC 不显示名字和图片
-//  2.不显示Notify
+//6.DrawView
+- (void)setDrawView {
+    BNRDrawVC *drawVC = [[BNRDrawVC alloc] init];
+    self.window.rootViewController = drawVC;
+}
+
 //5.setUINavagationControll
 -(void)setUINavagationControll{
     UINavigationController *navCtrl = [[UINavigationController alloc]initWithRootViewController:[self setTableView]];
     self.window.rootViewController = navCtrl;
 }
-//4.
 
+//4.TableView
 -(BNRItemsViewController *)setTableView{
     BNRItemsViewController *itemVC = [[BNRItemsViewController alloc] init];
    

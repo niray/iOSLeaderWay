@@ -31,6 +31,9 @@
 		04F329231CB4F3B500A05274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F329211CB4F3B500A05274 /* LaunchScreen.storyboard */; };
 		04F3292E1CB4F3B500A05274 /* LeaningWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3292D1CB4F3B500A05274 /* LeaningWayTests.m */; };
 		04F329391CB4F3B500A05274 /* LeaningWayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329381CB4F3B500A05274 /* LeaningWayUITests.m */; };
+		12D2F3B0FF185C245D8C4CF2 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2FF5825B0B10BECFC165A /* BNRLine.m */; };
+		12D2FA7E6D6A126F788B8903 /* BNRDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F08B7C8B86CC85FC0E3F /* BNRDrawVC.m */; };
+		12D2FCFBDA9062FD4F24A767 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F71D13E03FBCEB38C338 /* BNRDrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,12 @@
 		04F329341CB4F3B500A05274 /* LeaningWayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaningWayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F329381CB4F3B500A05274 /* LeaningWayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaningWayUITests.m; sourceTree = "<group>"; };
 		04F3293A1CB4F3B500A05274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D2F08B7C8B86CC85FC0E3F /* BNRDrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawVC.m; sourceTree = "<group>"; };
+		12D2F71D13E03FBCEB38C338 /* BNRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		12D2F724FAEBB4B81AC88017 /* BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		12D2FACAD5BBA90D6A8322D8 /* BNRDrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawVC.h; sourceTree = "<group>"; };
+		12D2FB64F7DB2824C861AD17 /* BNRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLine.h; sourceTree = "<group>"; };
+		12D2FF5825B0B10BECFC165A /* BNRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +134,6 @@
 				047F8B491CEC737800EB8463 /* BNRItem.m */,
 				047F8B451CEC559700EB8463 /* BNRItemStore.h */,
 				047F8B461CEC559700EB8463 /* BNRItemStore.m */,
-				04A219571CEEB548002853A7 /* BNRDetailVC.h */,
-				04A219581CEEB548002853A7 /* BNRDetailVC.m */,
-				04A219591CEEB548002853A7 /* BNRDetailVC.xib */,
 				047F8B4B1CECA30900EB8463 /* HeaderView.xib */,
 				047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */,
 				047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */,
@@ -163,6 +169,9 @@
 		04BD11871CF06EC100A94CF9 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				04A219571CEEB548002853A7 /* BNRDetailVC.h */,
+				04A219581CEEB548002853A7 /* BNRDetailVC.m */,
+				04A219591CEEB548002853A7 /* BNRDetailVC.xib */,
 				04BD11881CF06F2300A94CF9 /* BNRImageStore.h */,
 				04BD11891CF06F2300A94CF9 /* BNRImageStore.m */,
 			);
@@ -181,6 +190,7 @@
 				04F3292C1CB4F3B500A05274 /* LeaningWayTests */,
 				04F329371CB4F3B500A05274 /* LeaningWayUITests */,
 				04F329111CB4F3B500A05274 /* Products */,
+				12D2FDEA14F1D9AB5CCECAC9 /* TouchTracker */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +244,19 @@
 				04F3293A1CB4F3B500A05274 /* Info.plist */,
 			);
 			path = LeaningWayUITests;
+			sourceTree = "<group>";
+		};
+		12D2FDEA14F1D9AB5CCECAC9 /* TouchTracker */ = {
+			isa = PBXGroup;
+			children = (
+				12D2FF5825B0B10BECFC165A /* BNRLine.m */,
+				12D2FB64F7DB2824C861AD17 /* BNRLine.h */,
+				12D2F71D13E03FBCEB38C338 /* BNRDrawView.m */,
+				12D2F724FAEBB4B81AC88017 /* BNRDrawView.h */,
+				12D2F08B7C8B86CC85FC0E3F /* BNRDrawVC.m */,
+				12D2FACAD5BBA90D6A8322D8 /* BNRDrawVC.h */,
+			);
+			path = TouchTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +408,9 @@
 				047411261CC4D4EA00386CF0 /* BHRReminderVIewController.m in Sources */,
 				047F8B4A1CEC737800EB8463 /* BNRItem.m in Sources */,
 				047F8B471CEC559700EB8463 /* BNRItemStore.m in Sources */,
+				12D2F3B0FF185C245D8C4CF2 /* BNRLine.m in Sources */,
+				12D2FCFBDA9062FD4F24A767 /* BNRDrawView.m in Sources */,
+				12D2FA7E6D6A126F788B8903 /* BNRDrawVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

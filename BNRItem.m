@@ -8,22 +8,20 @@
 
 #import "BNRItem.h"
 
-
 @implementation BNRItem
 
-
-
--(instancetype)initWithItemName:(NSString *)name{
-    return  self;
-}
--(instancetype)initWithItemName:
-(NSString *)name
-                 valueInDollars:(int)value
-                   serialNumber:(NSString *)sNumber{
-    self.name=name;
-    self.serial=value;
-    self.value=sNumber;
-    self.dateValue = [[NSDate alloc]init];
+-(instancetype)        initWithItemName:
+        (NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber {
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.serial = value;
+        self.value = sNumber;
+        self.dateValue = [[NSDate alloc] init];
+    }
+    NSUUID *uuid = [[NSUUID alloc] init];
+    NSString *key = [uuid UUIDString];
+    _itemKey = key;
      return  self;
 }
 

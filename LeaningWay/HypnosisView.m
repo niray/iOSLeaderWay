@@ -56,7 +56,7 @@
     CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace,components,locations,2);
     
     CGPoint endPoint ;
-    endPoint.x=bounds.size.width;
+    endPoint.x = bounds.size.width;
     endPoint.y = bounds.size.height;
     CGContextDrawLinearGradient(UIGraphicsGetCurrentContext() , gradient, center, endPoint, 0);
     CGGradientRelease(gradient);

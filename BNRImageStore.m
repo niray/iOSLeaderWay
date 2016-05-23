@@ -39,11 +39,13 @@
 }
 
 -(void)setImage:(UIImage *)image forKey:(NSString*)key{
-    [self.dictinary setObject:image forKey:key];
+//    [self.dictinary setObject:image forKey:key];
+    self.dictinary[key] = image;
 }
 
 -(UIImage *)imageForKey:(NSString*)key{
-    return [self.dictinary objectForKey:key];
+//    return [self.dictinary objectForKey:key];
+    return self.dictinary[key];
 }
 
 -(void)deleteImageForKey:(NSString *)key{
@@ -52,8 +54,5 @@
     }
     [self.dictinary removeObjectForKey:key];
 }
-
-
-
 
 @end

@@ -21,6 +21,10 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     UIView *header= self.headerView;
     [self.tableView setTableHeaderView:header];
+
+    for (int i = 0; i < 5; i++) {
+        [self addNewItem:nil];
+    }
 }
 
 -(instancetype)init{
@@ -38,10 +42,6 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    [self addNewItem:nil];
-    [self addNewItem:nil];
-    [self addNewItem:nil];
 }
 
 -(instancetype)initWithStyle:(UITableViewStyle)style{

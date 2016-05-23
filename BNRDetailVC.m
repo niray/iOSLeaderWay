@@ -1,7 +1,8 @@
 #import "BNRDetailVC.h"
 #import "BNRItem.h"
+#import "BNRImageStore.h"
 
-@interface BNRDetailVC ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface BNRDetailVC () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *tf_name;
 @property (weak, nonatomic) IBOutlet UITextField *tf_serial;
@@ -9,35 +10,41 @@
 @property (weak, nonatomic) IBOutlet UILabel *tf_date;
 @property (weak, nonatomic) IBOutlet UIImageView *iv_show;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
-@property (  nonatomic) BOOL  isInited;
+
 @end
 
 @implementation BNRDetailVC
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.isInited  = NO;
+
+    BNRItem *item = self.item;
+
+    self.tf_name.text = item.name;
+    self.tf_serial.text = [NSString stringWithFormat:@"serial %d", item.serial];
+    self.tf_value.text = item.value;
+    static NSDateFormatter *dateFormatter = nil;
+    if (!dateFormatter) {
+        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateStyle = NSDateIntervalFormatterMediumStyle;
+        dateFormatter.timeStyle = NSDateFormatterNoStyle;
+    }
+    self.tf_date.text = [dateFormatter stringFromDate:item.dateValue];
+    self.tf_name.delegate = self;
+    self.tf_serial.delegate = self;
+    self.tf_value.delegate = self;
+    self.navigationItem.title = item.name;
+
+    NSString *itemKey = self.item.itemKey;
+
+    UIImage *imageToDisplay = [[BNRImageStore sharedStore] imageForKey:itemKey];
+    self.iv_show.image = imageToDisplay;
+
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    BNRItem *item = self.item;
-    if(! self.isInited){
-        self.isInited = YES;
-        
-        self.tf_name.text=item.name;
-        self.tf_serial.text=[NSString stringWithFormat:@"serial %d",  item.serial ];
-        self.tf_value.text=item.value;
-        static NSDateFormatter *dateFormatter =nil;
-        if(!dateFormatter) {
-            dateFormatter= [[NSDateFormatter alloc]init];
-            dateFormatter.dateStyle = NSDateIntervalFormatterMediumStyle;
-            dateFormatter.timeStyle = NSDateFormatterNoStyle;
-        }
-        self.tf_date.text=[dateFormatter stringFromDate: item.dateValue];
-        
-        self.navigationItem.title=item.name;        
-    }}
+}
 
 - (IBAction)takePicture:(id)sender {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
@@ -59,15 +66,31 @@
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
-    
+
     UIImage *img = [info objectForKey:UIImagePickerControllerEditedImage];
-    if(!img) img = [info objectForKey:UIImagePickerControllerOriginalImage];
+    if (!img) img = [info objectForKey:UIImagePickerControllerOriginalImage];
+    self.iv_show.image = img;
+
+    [[BNRImageStore sharedStore] setImage:img forKey:self.item.itemKey];
+    
     NSString *imgUrl = [info valueForKey:UIImagePickerControllerReferenceURL] ;
     NSLog([NSString stringWithFormat:@"%@", imgUrl]);
     self.tf_serial.text = [NSString stringWithFormat:@"%@", imgUrl];
-// self.iv_show.image=image;
+
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
+- (void)removeItem:(BNRItem *)item {
+    [[BNRImageStore sharedStore] deleteImageForKey:item.itemKey];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (IBAction)backgroundTapped:(id)sender {
+    [self.view endEditing:YES];
+}
 @end
