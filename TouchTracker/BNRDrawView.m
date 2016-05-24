@@ -6,6 +6,9 @@
 #import "BNRDrawView.h"
 #import "BNRLine.h"
 
+@interface BNRDrawView () <UIGestureRecognizerDelegate>
+
+@end
 
 @implementation BNRDrawView
 
@@ -31,15 +34,89 @@
         tapRecognizer.delaysTouchesBegan = YES;
         [self addGestureRecognizer:tapRecognizer];
 
-
         [tapRecognizer requireGestureRecognizerToFail:doubleTapRecognizer];
+
+        UILongPressGestureRecognizer *longGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+        [self addGestureRecognizer:longGR];
+
+
+        self.moveRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveLine:)];
+        self.moveRecognizer.delegate = self;
+        self.moveRecognizer.cancelsTouchesInView = NO;
+        [self addGestureRecognizer:self.moveRecognizer];
+
     }
     return self;
 }
 
+- (void)moveLine:(UIPanGestureRecognizer *)gr {
+    if (!self.selectLine) return;
+
+    if (gr.state == UIGestureRecognizerStateChanged) {
+        CGPoint translation = [gr translationInView:self];
+        CGPoint begin = self.selectLine.begin;
+        CGPoint end = self.selectLine.end;
+
+        begin.x += translation.x;
+        begin.y += translation.y;
+
+        end.x += translation.x;
+        end.y += translation.y;
+
+        self.selectLine.begin = begin;
+        self.selectLine.end = end;
+
+        [self setNeedsDisplay];
+        [gr setTranslation:CGPointZero inView:self];
+    }
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(nonnull UIGestureRecognizer *)otherGestureRecognizer :(UIGestureRecognizer *)otherGestureRecognizer {
+    self.isMoving = (self.moveRecognizer == gestureRecognizer);
+    return self.isMoving;
+}
+
+- (void)longPress:(UIGestureRecognizer *)gr {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+
+    if (gr.state == UIGestureRecognizerStateBegan) {
+        CGPoint point = [gr locationInView:self];
+        self.selectLine = [self lineAtPoint:point];
+        if (self.selectLine) {
+            [self.linesInProgress removeAllObjects];
+        }
+    } else if (gr.state == UIGestureRecognizerStateEnded) {
+        self.selectLine = nil;
+    }
+    [self setNeedsDisplay];
+}
 
 - (void)tapRecognizer:(UIGestureRecognizer *)gr {
-    NSLog(@"One Tap");
+    CGPoint point = [gr locationInView:self];
+    self.selectLine = [self lineAtPoint:point];
+    NSLog(@"One Tap , %@", self.selectLine);
+
+
+    if (self.selectLine) {
+        [self becomeFirstResponder];
+        UIMenuController *menu = [UIMenuController sharedMenuController];
+        UIMenuItem *deleteMenu = [[UIMenuItem alloc] initWithTitle:@"删除" action:@selector(deleteLine:)];
+        menu.menuItems = @[deleteMenu, deleteMenu];
+        [menu setTargetRect:CGRectMake(point.x, point.y, 2, 2) inView:self];
+        [menu setMenuVisible:YES animated:YES];
+    } else {
+        [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
+    }
+    [self setNeedsDisplay];
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)deleteLine:(id)sender {
+    [self.finishedLines removeObject:self.selectLine];
+    [self setNeedsDisplay];
 }
 
 - (void)doubleTap:(UIGestureRecognizer *)gr {
@@ -74,6 +151,21 @@
 //    }
 }
 
+- (BNRLine *)lineAtPoint:(CGPoint)p {
+    for (BNRLine *line in self.finishedLines) {
+        CGPoint start = line.begin;
+        CGPoint end = line.end;
+        for (float t = 0.0; t <= 1.0; t += 0.05) {
+            float x = start.x + t * (end.x - start.x);
+            float y = start.y + t * (end.y - start.y);
+            if (hypot(x - p.x, y - p.y) < 20.0) {
+                return line;
+            }
+        }
+    }
+    return nil;
+}
+
 
 - (void)strokeLine:(BNRLine *)line {
     UIBezierPath *path = [UIBezierPath bezierPath];
@@ -86,14 +178,18 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"%@", NSStringFromSelector(_cmd));
+    if (self.isMoving)return;
     for (UITouch *t in touches) {
         CGPoint location = [t locationInView:self];
+
+
         BNRLine *line = [[BNRLine alloc] init];
         line.begin = location;
         line.end = location;
 
         NSValue *key = [NSValue valueWithNonretainedObject:t];
         self.linesInProgress[key] = line;
+      
     }
 
 //   UITouch *t                          = [touches anyObject];
