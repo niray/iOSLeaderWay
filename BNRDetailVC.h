@@ -10,6 +10,11 @@
 @class BNRItem;
 
 @interface BNRDetailVC : UIViewController
+
 - (IBAction)backgroundTapped:(id)sender;
+
+- (instancetype)initForNewItem:(BOOL)isNew;
+
 @property (nonatomic,strong) BNRItem *item;
+
 @end

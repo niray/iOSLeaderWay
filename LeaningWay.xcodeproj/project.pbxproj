@@ -32,6 +32,7 @@
 		04F3292E1CB4F3B500A05274 /* LeaningWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3292D1CB4F3B500A05274 /* LeaningWayTests.m */; };
 		04F329391CB4F3B500A05274 /* LeaningWayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F329381CB4F3B500A05274 /* LeaningWayUITests.m */; };
 		12D2F3B0FF185C245D8C4CF2 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2FF5825B0B10BECFC165A /* BNRLine.m */; };
+		12D2F6B0445A3A7D5B277A50 /* MenuListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F3AC3EE783FC408B544F /* MenuListVC.m */; };
 		12D2FA7E6D6A126F788B8903 /* BNRDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F08B7C8B86CC85FC0E3F /* BNRDrawVC.m */; };
 		12D2FCFBDA9062FD4F24A767 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2F71D13E03FBCEB38C338 /* BNRDrawView.m */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,8 @@
 		04F329381CB4F3B500A05274 /* LeaningWayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaningWayUITests.m; sourceTree = "<group>"; };
 		04F3293A1CB4F3B500A05274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D2F08B7C8B86CC85FC0E3F /* BNRDrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawVC.m; sourceTree = "<group>"; };
+		12D2F27D80D5BC8225B672B1 /* MenuListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuListVC.h; sourceTree = "<group>"; };
+		12D2F3AC3EE783FC408B544F /* MenuListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListVC.m; sourceTree = "<group>"; };
 		12D2F71D13E03FBCEB38C338 /* BNRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
 		12D2F724FAEBB4B81AC88017 /* BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
 		12D2FACAD5BBA90D6A8322D8 /* BNRDrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawVC.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				047F8B4B1CECA30900EB8463 /* HeaderView.xib */,
 				047F8B421CEC1EA500EB8463 /* BNRItemsViewController.h */,
 				047F8B431CEC1EA500EB8463 /* BNRItemsViewController.m */,
+				12D2F3AC3EE783FC408B544F /* MenuListVC.m */,
+				12D2F27D80D5BC8225B672B1 /* MenuListVC.h */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				12D2F3B0FF185C245D8C4CF2 /* BNRLine.m in Sources */,
 				12D2FCFBDA9062FD4F24A767 /* BNRDrawView.m in Sources */,
 				12D2FA7E6D6A126F788B8903 /* BNRDrawVC.m in Sources */,
+				12D2F6B0445A3A7D5B277A50 /* MenuListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

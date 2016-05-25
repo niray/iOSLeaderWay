@@ -36,12 +36,8 @@
     UIBarButtonItem *bbi = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
     navItem .rightBarButtonItem = bbi;
     navItem.leftBarButtonItem = self.editButtonItem;
-    
-    
+
     return self;
-}
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
 }
 
 -(instancetype)initWithStyle:(UITableViewStyle)style{
@@ -69,11 +65,15 @@
 -(IBAction)addNewItem:(id)sender{
     //NSInteger lastRow = [self.tableView numberOfRowsInSection:0] ;
     BNRItem *newItem = [[BNRItemStore sharedStore]createItem];
-    NSInteger lastRow = [[[BNRItemStore sharedStore]allItems]indexOfObject:newItem];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:lastRow inSection:0];
-    
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
-    
+//    NSInteger lastRow = [[[BNRItemStore sharedStore]allItems]indexOfObject:newItem];
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:lastRow inSection:0];
+//    
+//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+    BNRDetailVC *detailVC = [[BNRDetailVC alloc] initForNewItem:YES];
+    detailVC.item = newItem;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailVC];
+    [self presentViewController:navController animated:YES completion:nil];
+
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -119,10 +119,12 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    BNRDetailVC *detailVC = [[BNRDetailVC alloc]init];
+    BNRDetailVC *detailVC = [[BNRDetailVC alloc] initForNewItem:NO];
+
     NSArray *items = [[BNRItemStore sharedStore]allItems];
     detailVC.item  = items[indexPath.row];
     [self.navigationController pushViewController:detailVC animated:YES];
+
 }
 
 @end
