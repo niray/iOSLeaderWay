@@ -71,6 +71,11 @@
 //    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
     BNRDetailVC *detailVC = [[BNRDetailVC alloc] initForNewItem:YES];
     detailVC.item = newItem;
+
+    detailVC.dismissBlock = ^{
+        [self.tableView reloadData];
+    };
+
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailVC];
     [self presentViewController:navController animated:YES completion:nil];
 

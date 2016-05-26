@@ -25,7 +25,6 @@
      return  self;
 }
 
-
 +(instancetype) randomItem{
     NSArray *randomAdjectiveList = @[@"Fluffy",@"Rusty",@"Shiny"];
     NSArray *randomNounList = @[@"Bear",@"Spork",@"Mac"];
@@ -57,11 +56,26 @@
     return desciptionString;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super init];
+    if (self) {
+        self.name = [coder decodeObjectForKey:@"self.name"];
+        self.serial = [coder decodeIntForKey:@"self.serial"];
+        self.value = [coder decodeObjectForKey:@"self.value"];
+        self.dateValue = [coder decodeObjectForKey:@"self.dateValue"];
+        self.itemKey = [coder decodeObjectForKey:@"self.itemKey"];
+    }
 
+    return self;
+}
 
-
-
-
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.name forKey:@"self.name"];
+    [coder encodeInt:self.serial forKey:@"self.serial"];
+    [coder encodeObject:self.value forKey:@"self.value"];
+    [coder encodeObject:self.dateValue forKey:@"self.dateValue"];
+    [coder encodeObject:self.itemKey forKey:@"self.itemKey"];
+}
 
 
 @end

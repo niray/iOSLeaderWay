@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BNRItem : NSObject
+@interface BNRItem : NSObject <NSCoding>
 
 @property (nonatomic,weak) NSString *name;
 @property int serial;
 @property (nonatomic,weak) NSString *value;
 @property (nonatomic,strong) NSDate *dateValue;
 @property(nonatomic, copy) NSString *itemKey;
+
+- (instancetype)initWithCoder:(NSCoder *)coder;
+
+- (void)encodeWithCoder:(NSCoder *)coder;
 -(instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber;
 -(instancetype) initWithItemName:(NSString *)name;
 +(instancetype) randomItem;

@@ -49,9 +49,17 @@
     BNRDetailVC *detailVC = [[BNRDetailVC alloc] initForNewItem:YES];
 
     detailVC.item = newItem;
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailVC];
 
+
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailVC];
+    navController.modalPresentationStyle = UIModalPresentationFormSheet;
+    // navController.modalPresentationStyle = UIModalPresentationCurrentContext;
     [self presentViewController:navController animated:YES completion:nil];
+
+}
+
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ __nullable)(void))completion {
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -79,11 +87,13 @@
 
 - (void)save:(id)sender {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    //  [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
 
 - (void)cancel:(id)sender {
     [[BNRItemStore sharedStore] removeItem:self.item];
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+//    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
 
 - (IBAction)takePicture:(id)sender {
