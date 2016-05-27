@@ -22,9 +22,9 @@
     UIView *header= self.headerView;
     [self.tableView setTableHeaderView:header];
 
-    for (int i = 0; i < 5; i++) {
-        [self addNewItem:nil];
-    }
+    // for (int i = 0; i < 5; i++) {
+    //     [self addNewItem:nil];
+    //  }
 }
 
 -(instancetype)init{

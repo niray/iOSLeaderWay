@@ -27,7 +27,7 @@
 
 +(instancetype) randomItem{
     NSArray *randomAdjectiveList = @[@"Fluffy",@"Rusty",@"Shiny"];
-    NSArray *randomNounList = @[@"Bear",@"Spork",@"Mac"];
+    NSArray *randomNounList = @[@"Bear", @"Spork", @"Mac"];
     
     NSInteger adjectiveIndex =arc4random()%[randomAdjectiveList count];
     NSInteger nounIndex = arc4random() % [randomNounList count];
